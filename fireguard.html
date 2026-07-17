@@ -11,10 +11,14 @@
 </head>
 <body>
 
+<!-- Mobile Menu Button -->
+<button class="menu-btn" onclick="toggleMenu()">☰</button>
+
 <div class="container">
 
     <!-- Sidebar -->
-    <div class="sidebar">
+    <div class="sidebar" id="sidebar">
+
         <h2>🔥 FireGuard AI</h2>
 
         <ul>
@@ -23,10 +27,12 @@
             <li>Alerts</li>
             <li>History</li>
             <li>Settings</li>
+
             <li>
                 <a href="about.html">About Us</a>
             </li>
         </ul>
+
     </div>
 
     <!-- Main Content -->
@@ -76,6 +82,7 @@
 
             <div class="alert-card">
                 <h3>Recent Alerts</h3>
+
                 <div class="safe">
                     ✅ No Critical Alerts
                 </div>
@@ -84,10 +91,6 @@
         </div>
 
     </div>
-
-    <button class="menu-btn" onclick="toggleMenu()">☰</button>
-
-<div class="sidebar" id="sidebar">
 
 </div>
 
