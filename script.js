@@ -47,3 +47,8 @@ setInterval(() => {
     chart.update();
 
 }, 3000);
+
+options: {
+    responsive: true,
+    maintainAspectRatio: false
+}
