@@ -52,3 +52,6 @@ options: {
     responsive: true,
     maintainAspectRatio: false
 }
+function toggleMenu(){
+    document.getElementById("sidebar").classList.toggle("show");
+}
