@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FireGuard AI Login</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#0f172a,#1e293b,#0f172a);
+    overflow:hidden;
+}
+
+/* Animated circles */
+
+.circle{
+    position:absolute;
+    border-radius:50%;
+    background:rgba(255,255,255,0.05);
+    animation:float 10s infinite linear;
+}
+
+.circle:nth-child(1){
+    width:200px;
+    height:200px;
+    top:10%;
+    left:10%;
+}
+
+.circle:nth-child(2){
+    width:300px;
+    height:300px;
+    bottom:10%;
+    right:10%;
+}
+
+@keyframes float{
+    0%{transform:translateY(0);}
+    50%{transform:translateY(-30px);}
+    100%{transform:translateY(0);}
+}
+
+/* Login Box */
+
+.login-box{
+    width:380px;
+    padding:40px;
+    border-radius:20px;
+
+    background:rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,0.1);
+
+    box-shadow:0 8px 32px rgba(0,0,0,0.3);
+
+    text-align:center;
+
+    color:white;
+}
+
+.logo{
+    font-size:60px;
+}
+
+h1{
+    margin-top:10px;
+}
+
+.subtitle{
+    color:#cbd5e1;
+    margin-bottom:30px;
+}
+
+/* Inputs */
+
+.input-box{
+    margin-bottom:20px;
+}
+
+input{
+    width:100%;
+    padding:14px;
+
+    border:none;
+    outline:none;
+
+    border-radius:10px;
+
+    background:rgba(255,255,255,0.1);
+
+    color:white;
+
+    font-size:16px;
+}
+
+input::placeholder{
+    color:#cbd5e1;
+}
+
+/* Button */
+
+button{
+    width:100%;
+    padding:14px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#ef4444;
+
+    color:white;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+button:hover{
+    transform:translateY(-3px);
+    background:#dc2626;
+}
+
+/* Footer */
+
+.footer{
+    margin-top:25px;
+    font-size:13px;
+    color:#cbd5e1;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="circle"></div>
+<div class="circle"></div>
+
+<div class="login-box">
+
+<div class="logo">🔥</div>
+
+<h1>FireGuard AI</h1>
+
+<p class="subtitle">
+Smart Fire Prevention & Monitoring System
+</p>
+
+<form action="fireguard.html">
+
+<div class="input-box">
+<input type="text" placeholder="Username" required>
+</div>
+
+<div class="input-box">
+<input type="password" placeholder="Password" required>
+</div>
+
+<button type="submit">
+Login
+</button>
+
+</form>
+
+<div class="footer">
+Developed by Team The Lunars
+</div>
+
+</div>
+
+</body>
+</html>
