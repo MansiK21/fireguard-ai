@@ -101,3 +101,12 @@ a{
     text-decoration: none;
     color: inherit;
 }
+
+.graph-card{
+    height: 350px;
+}
+
+#myChart{
+    width: 100% !important;
+    height: 100% !important;
+}
