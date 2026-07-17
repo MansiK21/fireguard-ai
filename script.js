@@ -11,19 +11,19 @@ const chart = new Chart(ctx, {
         labels: labels,
         datasets: [
             {
-                label: 'Temperature',
+                label: 'Temperature (°C)',
                 data: temperature
             },
             {
-                label: 'Current',
+                label: 'Current (A)',
                 data: current
             }
         ]
     },
     options: {
-    responsive: true,
-    maintainAspectRatio: false
-}
+        responsive: true,
+        maintainAspectRatio: false
+    }
 });
 
 // Simulate Live Data
@@ -35,23 +35,27 @@ setInterval(() => {
     labels.shift();
 
     temperature.push(
-        (40 + Math.random()*5).toFixed(1)
+        Number((40 + Math.random() * 5).toFixed(1))
     );
     temperature.shift();
 
     current.push(
-        (2 + Math.random()).toFixed(2)
+        Number((2 + Math.random()).toFixed(2))
     );
     current.shift();
+
+    // Update dashboard cards
+    document.getElementById("temp").innerText =
+        temperature[temperature.length - 1] + "°C";
+
+    document.getElementById("current").innerText =
+        current[current.length - 1] + "A";
 
     chart.update();
 
 }, 3000);
 
-options: {
-    responsive: true,
-    maintainAspectRatio: false
-}
-function toggleMenu(){
+// Mobile Menu Toggle
+function toggleMenu() {
     document.getElementById("sidebar").classList.toggle("show");
 }
